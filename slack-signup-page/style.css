@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: grid;
+    height: 60px;
+    margin-top: 35px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+header > img{
+    height: 25px;
+    margin: 0 auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+header > .headercontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns content to the end of its flex container */
+    align-items: flex-end; /* Centers content vertically */
+    padding-left: 20px; /* Adds space inside the container */
+    grid-column-start: 3;
+}
+.body{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center ;
+    flex-direction: column;
+    width: auto;
+    height: 85vh;
+    font-family: sans-serif;
+}
+.body > p{
+    font-size: xx-large;
+    font-weight: bolder;
+    margin: 10px;
+}
+.body > p > span{
+    color: brown;
+}
+#text{
+    font-size: medium;
+    font-weight: 100;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.input > input{
+    padding: 10px 25px;
+    font-size: larger;
+    border-color: rgb(186, 189, 191);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.input > select{
+    padding: 10px 25px;
+    font-size: larger;
+    border-color: rgb(186, 189, 191);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#button{
+    font-size: large;
+    padding: 8px 190px;
+    background-color: brown;
+    border-radius: 10px;
+    border-width: 0.5px;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 15px;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    background-color: rgb(226, 231, 235);
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+.data > ul > li{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    list-style-position: inside;
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+
+}
+footer{
+    width: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(24, 21, 21);
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: rgb(30, 3, 208);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sign up for a new account | slack</title>
+</head>
+<body>
+    <header>
+        <img src="./logo.svg" alt="slack logo">
+        <div class="headercontainer">
+            <p>Already have an account?</p>
+            <a href="https://chromium.slack.com/signin#/signin">Sign in instead</a>
+        </div>
+    </header>
+
+    <div class="body">
+        <p>Join <span>Chromium</span> on Slack</p>
+        <p id="text">Start by entering the email address that you use for work.</p>
+        <div class="input">
+            <input type="name" placeholder="your-email">
+            <select name="domain" id="domain" value="@chromium.org">
+                <option value="@chromium.org">@chromium.org</option>
+                <option value="@google.com">@google.com</option>
+                <option value="@brave.com">@brave.com</option>
+                <option value="@microsoft.com">@microsoft.com</option>
+                <option value="@island.io">@island.io</option>
+            </select>
+        </div>
+        <input id="button" type="button" value="Continue">
+        <div class="data">
+            <p style="font-weight: 600;">You can use any account with the domain:</p>
+            <ul style="display: flex; justify-content: center; align-items: flex-start; flex-direction: column;">
+                <li>chromium.org</li>
+                <li>google.com</li>
+                <li>brave.com</li>
+                <li>microsoft.com</li>
+                <li>islands.io</li>
+            </ul>
+            <p style="font-weight: 100; padding-top: 10px; font-size: small;">Don’t have an email address from one of those domains?</p>
+            <p style="font-weight: 100; font-size: small;">Contact the workspace administrator at <span style="font-weight: bold;">Chromium</span> for an invitation.</p>
+        </div>
+    </div>
+    <footer>
+        <a href="https://chromium.slack.com/intl/en-gb/legal">Privacy & terms</a>
+        <a href="https://chromium.slack.com/intl/en-gb/help/requests/new">Contact us</a>
+    </footer>
+</body>
+</html>
